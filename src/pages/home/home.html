@@ -1,0 +1,79 @@
+<ion-content>
+  <button class="button-div" ion-button style="background: linear-gradient(45deg, #014c82 20%, #2d6f9e 80%);" (click)="medirUmidSolo()">
+    <div class="centered">
+      <img src="assets/img/water.svg" alt="" style="width: 50%;">
+      <p>Umidade do Solo</p>
+      <!-- <p class="valores">teste</p> -->
+      <p class="valores">{{valores.umSolo}}</p>
+    </div>
+  </button>
+  <button class="button-div" ion-button style="background: linear-gradient(45deg, #fdb43a 20%, #ffcb77 80%);" (click)="medirLuminosidade()">
+    <div class="centered">
+      <img src="assets/img/sol.svg" style="width: 50%;">
+      <p>Luminosidade</p>
+      <!-- <p class="valores">teste</p> -->
+      <p class="valores">{{valores.lumin}}</p>
+    </div>
+  </button>
+  <button class="button-div" ion-button style="background:  #0b756c" (click)="medirTemp()">
+    <div class="centered">
+      <img src="assets/img/thermometer.svg" style="width: 50%;">
+      <p>Temperatura</p>
+      <!-- <p class="valores">teste</p> -->
+      <p class="valores">{{valores.temp}}</p>
+    </div>
+  </button>
+  <button class="button-div" ion-button style="background:#858688" (click)="medirUmidAr()">
+    <div class="centered">
+      <img src="assets/img/wind.svg" style="width: 50%;">
+      <p>Umidade do Ar</p>
+      <!-- <p class="valores">teste</p> -->
+      <p class="valores">{{valores.umAr}}</p>
+    </div>
+  </button>
+  
+  <button class="button-personalizado" clear ion-button (click)="irrigar()">
+    <div class="centered">
+      <img src="assets/img/irrigation.svg" style="width: 25%;">
+
+    </div>
+  </button>
+  <!-- <button class="button-personalizado" clear ion-button (click)="acionarPersiana()">
+    <div class="centered">
+      <img src="assets/img/persiana.svg" style="width: 50%;">
+
+    </div>
+  </button> -->
+
+
+  <!--
+
+  #858688 // cinza
+  #858688 // verde
+  #363435 // cinza escuro
+  #0b756c // verde escuro
+  #2d6f9e // azul
+  #014c82 // azul escuro
+  #fdb43a // laranja
+  #ffcb77 // laranja claro
+
+  background: linear-gradient(45deg, #014c82 50%, #2d6f9e 50%); // Gradiente: Cores cortadas ao meio
+-->
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <button ion-button icon-left color="royal">
+        <ion-icon name="ios-information-circle-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+    <!-- <ion-buttons end>
+      <button ion-button icon-right color="royal" (click)="irParaCamera()">
+        <ion-icon ios="ios-videocam" md="md-videocam"></ion-icon>
+      </button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-footer>

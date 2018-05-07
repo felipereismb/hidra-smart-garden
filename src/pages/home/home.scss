@@ -1,0 +1,121 @@
+page-home {
+    .square{
+        width: 50%;
+        height: 40%; /* A mágica está aqui */
+        padding-bottom: 50%; /* ... e está aqui */
+        margin: 0%;
+        float: left;
+        position: relative;
+    }
+    .block{
+        position: absolute;
+        text-align: center;
+        background: #1a1a1a;
+        width: 100%;
+        height: 100%;
+    }
+    .block:before {
+        content: '';
+        display: inline-block;
+        height: 100%; 
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+        
+    .centered {
+        display: inline-block;
+        vertical-align: middle;
+        width: 80%;
+        color: #FFF;
+    }
+
+    .button-div{
+        width: 50%;
+        height: 40%; /* A mágica está aqui */
+
+        border-radius: 0%;
+        margin: 0%;
+        float: left;
+        position: relative;
+    }
+
+    .button-personalizado{
+        width: 100%;
+        height: 20%; /* A mágica está aqui */
+        
+        border-radius: 0%;
+        margin: 0%;
+        float: left;
+        position: relative;
+    }
+ 
+    /* Smaller than standard 960 (devices and browsers) */
+    @media only screen and (min-width : 1550px)
+    { 
+        p{
+            font-size: 25px;
+        } 
+        img{
+            width: 50%;
+        }
+    }
+
+    @media only screen and (min-width : 1400px) and (max-width : 1549px)
+    {   p{
+            font-size: 20px;
+        }
+        img{
+            width: 50%;
+        }
+    }
+
+    @media only screen and (max-width: 959px) {
+        p{
+            font-size: 20px;
+        }
+        img{
+            width: 50%;
+        }
+    }
+
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        p{
+            font-size: 20px;
+        }
+        img{
+            width: 50%;
+        }
+    }
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 50%;
+        }
+    }
+
+    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 50%;
+        }
+    }
+
+    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+    @media only screen and (max-width: 479px) {
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 50%;
+        }
+    }
+    
+}
